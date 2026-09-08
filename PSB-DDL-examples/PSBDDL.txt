@@ -1,0 +1,139 @@
+S11 1 1 1 1    DHDHOS1                                                  00010002
+U ISRT FOUR HOSPITALS (ROOT), SIX WARDS, TWELVE PATIENTS                00020001
+U***********************************************************************00030000
+L        ISRT  HOSPITAL                                                 00110000
+L  V0900 DATA  H1210010000AALEXANDRIA                                   00120001
+E                                                                       00130000
+WTO  AREA1 READY TO SYNC.                                               00140000
+L        CHKP                                                           00150000
+E                                                                       00160000
+WTO  AREA1 IS SYNCED.                                                   00170000
+U                                                                       00180000
+L        GHU   HOSPITAL(HOSPCODE =H1210010000A)                         00190001
+E                                                                       00200000
+L        ISRT  WARD                                                     00210000
+L  V0900 DATA  0001GENERAL                                              00220000
+L  V0900 DATA  0002SPECIAL                                              00230000
+L  V0900 DATA  0003INTERNAL                                             00240000
+L  V0900 DATA  0004SURGICAL                                             00250000
+L  V0900 DATA  0005COSMETIC                                             00260000
+L  V0050 DATA  0007INTENSIVE                                            00310000
+E                                                                       00320000
+L        GHU   HOSPITAL(HOSPCODE =H1210010000A)                        *00330001
+               WARD    (WARDNAME =SURGICAL       )                      00340000
+E                                                                       00350000
+L        ISRT  PATIENT                                                  00360000
+L  V0050 DATA  0001JAMES BUTTERIE                                       00370001
+L  V0050 DATA  0002JOSEPHINE DARAKJY                                    00380001
+L  V0050 DATA  0003ART VENERE                                           00390001
+L  V0050 DATA  0004LENNA PAPROCKI                                       00400001
+L  V0050 DATA  0005DONETTE FOLLER                                       00410001
+L  V0050 DATA  0006SIMONA MORASCA                                       00420001
+L  V0050 DATA  0007MITSUE TOLLNER                                       00430001
+L  V0050 DATA  0008LEOTA DILLIARD                                       00440001
+L  V0050 DATA  0009SAGE WIESER                                          00450001
+L  V0050 DATA  0010KRIS MARRIER                                         00460001
+L  V0050 DATA  0011MINNA AMIGON                                         00470001
+L  V0050 DATA  0012ABEL MACLEAD                                         00480001
+E                                                                       00490000
+L        CHKP                                                           00500000
+U                                                                       00600000
+L        ISRT  HOSPITAL                                                 00610000
+L  V0090 DATA  H1210020000ASANTA TERISA                                 00620001
+E                                                                       00630000
+L        GHU   HOSPITAL(HOSPCODE =H1210020000A)                         00640001
+E                                                                       00650000
+L        ISRT  WARD                                                     00660000
+L  V0900 DATA  0001GENERAL                                              00670000
+L  V0900 DATA  0002SPECIAL                                              00680000
+L  V0900 DATA  0003INTERNAL                                             00690000
+L  V0900 DATA  0004SURGICAL                                             00700000
+L  V0900 DATA  0005COSMETIC                                             00710000
+L  V0050 DATA  0007INTENSIVE                                            00760000
+E                                                                       00770000
+L        GHU   HOSPITAL(HOSPCODE =H1210020000A)                        *00780001
+               WARD    (WARDNAME =SURGICAL       )                      00790000
+E                                                                       00800000
+L        ISRT  PATIENT                                                  00810000
+L  V0900 DATA  0001KILEY CALDARERA                                      00820001
+L  V0900 DATA  0002GRACIELA RUTA                                        00830001
+L  V0900 DATA  0003CAMMY  ALBARES                                       00840001
+L  V0900 DATA  0004MATTIE POQUETTE                                      00850001
+L  V0900 DATA  0005MEAGHAN GARUFI                                       00860001
+L  V0900 DATA  0006GLADYS RIM                                           00870001
+L  V0900 DATA  0007YUKI WHOBREY                                         00880001
+L  V0900 DATA  0008FLETCHER FLOSI                                       00890001
+L  V0900 DATA  0009BETTE NICKA                                          00900001
+L  V0900 DATA  0010VERONIKA INOUYE                                      00910001
+L  V0900 DATA  0011WILLARD KOLMETZ                                      00920001
+L  V0900 DATA  0012MARYANN ROYSTER                                      00930001
+E                                                                       00940000
+L        CHKP                                                           00950000
+E                                                                       00960000
+L        ISRT  HOSPITAL                                                 01110000
+L  V0120 DATA  H1210030000ASANTA CLARA                                  01120001
+E                                                                       01130000
+L        GHU   HOSPITAL(HOSPCODE =H1210030000A)                         01140001
+E                                                                       01150000
+L        ISRT  WARD                                                     01160000
+L  V0120 DATA  0001GENERAL                                              01170000
+L  V0120 DATA  0002SPECIAL                                              01180000
+L  V0120 DATA  0003INTERNAL                                             01190000
+L  V0120 DATA  0004SURGICAL                                             01200000
+L  V0120 DATA  0005COSMETIC                                             01210000
+L  V0120 DATA  0007INTENSIVE                                            01260000
+E                                                                       01270000
+L        GHU   HOSPITAL(HOSPCODE =H1210030000A)                        *01280001
+               WARD    (WARDNAME =SURGICAL       )                      01290000
+E                                                                       01300000
+L        ISRT  PATIENT                                                  01310000
+L  V0150 DATA  0001ALISHA SLUSARSKI                                     01320001
+L  V0120 DATA  0002ALLENE ITURBIDE                                      01330001
+L  V0150 DATA  0003CHANEL CAUDY                                         01340001
+L  V0120 DATA  0004EZEKIEL CHUI                                         01350001
+L  V0150 DATA  0005WILLOW KUSKO                                         01360001
+L  V0120 DATA  0006BERNARDO FIGEROA                                     01370001
+L  V0150 DATA  0007AMMIE CORRIO                                         01380001
+L  V0120 DATA  0008FRANCINE VOCELKA                                     01390001
+L  V0150 DATA  0009ERNIE STENSETH                                       01400001
+L  V0120 DATA  0010ALBINA GLICK                                         01410001
+L  V0150 DATA  0011ALISHIA SERGI                                        01420001
+L  V0120 DATA  0012SOLANGE SHINKO                                       01430001
+E                                                                       01440000
+L        CHKP                                                           01450000
+E                                                                       01460000
+U                                                                       01600000
+L        ISRT  HOSPITAL                                                 01610000
+L  V0090 DATA  H1210040000ANEW ENGLAND                                  01620001
+E                                                                       01630000
+L        GHU   HOSPITAL(HOSPCODE =H1210040000A)                         01640001
+E                                                                       01650000
+L        ISRT  WARD                                                     01660000
+L  V0900 DATA  0001GENERAL                                              01670000
+L  V0900 DATA  0002SPECIAL                                              01680000
+L  V0900 DATA  0003INTERNAL                                             01690000
+L  V0900 DATA  0004SURGICAL                                             01700000
+L  V0900 DATA  0005COSMETIC                                             01710000
+L  V0050 DATA  0007INTENSIVE                                            01760000
+E                                                                       01770000
+L        GHU   HOSPITAL(HOSPCODE =H1210040000A)                        *01780001
+               WARD    (WARDNAME =SURGICAL       )                      01790000
+E                                                                       01800000
+L        ISRT  PATIENT                                                  01810000
+L  V0900 DATA  0001JOSE STOCKHAM                                        01820001
+L  V0900 DATA  0002ROZELLA OSTROSKY                                     01830001
+L  V0900 DATA  0003VALENTINE GILLIAN                                    01840001
+L  V0900 DATA  0004KATI RULAPAUGH                                       01850001
+L  V0900 DATA  0005YOULANDA SCHEMMER                                    01860001
+L  V0900 DATA  0006DYAN OLDROYD                                         01870001
+L  V0900 DATA  0007ROXANE CAMPAIN                                       01880001
+L  V0900 DATA  0008LAVERA PERIN                                         01890001
+L  V0900 DATA  0009ERICK FERENCZ                                        01900001
+L  V0900 DATA  0010FATIMA SAYLORS                                       01910001
+L  V0900 DATA  0011JINA BRIDDICK                                        01920001
+L  V0900 DATA  0012KANISHA WAYCOTT                                      01930001
+E                                                                       01940000
+L        CHKP                                                           01950000
+E                                                                       01960000
+U                                                                       02080000
+U***********************************************************************02090000
