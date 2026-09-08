@@ -1,0 +1,30 @@
+================================================================================
+IMS DBA Executor — Execution Log
+================================================================================
+Operation:  CREATE (DBD)
+Name:       SCHOOL
+DDL file:   ../../ddl-output/SCHOOL_create.sql
+Timestamp:  20260824_141709
+User:       IBMUSER
+Host:       172.19.3.3:5555
+================================================================================
+
+Validation: PASSED
+  CREATE DATABASE:   1
+  CREATE TABLESPACE: 1
+  CREATE TABLE:      1
+
+Connecting to 172.19.3.3:5555 PSB=DFSCP001
+Connected successfully.
+[1/4] CREATE DATABASE SCHOOL ACCESS HISAM
+    VERSION '08/24/2026.00'
+    PASSWDNO
+    DATXEXITNO
+    DATA CAPTURE NONE CCSID 'Cp1047'
+         → OK
+[2/4] CREATE TABLESPACE SCHOOL IN SCHOOL
+    RECORD(156,156)
+    SIZE PRIMARY 2048 SIZE SECONDARY 2048
+    OVERFLOW(SCHOOLOF)
+         → OK
+[3/4] 

@@ -1,0 +1,13 @@
+================================================================================
+IMS DBA Executor — Execution Log
+================================================================================
+Operation:  SYNC
+Timestamp:  20260720_105512
+User:       IBMUSER
+Host:       172.19.3.3:5555
+================================================================================
+
+Connecting to 172.19.3.3:5555 PSB=DFSCP001
+Connected successfully.
+Issuing SYNC DDL...
+SYNC DDL failed: -104: Illegal symbol SYNC was used. 

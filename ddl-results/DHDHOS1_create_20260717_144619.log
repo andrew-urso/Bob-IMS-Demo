@@ -1,0 +1,112 @@
+================================================================================
+IMS DBA Executor — Execution Log
+================================================================================
+Operation:  CREATE (DBD)
+Name:       DHDHOS1
+DDL file:   ../../ddl-output/DHDHOS1_create_20260715_160000.sql
+Timestamp:  20260717_144619
+User:       IBMUSER
+Host:       172.19.3.3:5555
+================================================================================
+
+Validation: PASSED
+  CREATE DATABASE:   1
+  CREATE TABLESPACE: 1
+  CREATE TABLE:      3
+
+Connecting to 172.19.3.3:5555 PSB=DFSCP001
+Connected successfully.
+[1/5] CREATE DATABASE DHDHOS1 ACCESS HISAM
+    VERSION '07/15/2026.16'
+    PASSWDNO
+    DATXEXITNO
+    DATA CAPTURE NONE CCSID 'Cp1047'
+         → OK
+[2/5] CREATE TABLESPACE DHDHOS1 IN DHDHOS1
+    RECORD(31,31)
+    SIZE PRIMARY 2048 SIZE SECONDARY 2048
+    OVERFLOW(DHDHOS1O)
+         → OK
+[3/5] CREATE TABLE HOSPITAL (
+    HOSPCODE CHAR(11)
+        START 1
+        TYPE C
+        INTERNALNAME HOSPCODE
+        PRIMARY KEY
+        INTERNAL TYPECONVERTER CHAR
+        CCSID 'Cp1047',
+    HOSPNAME CHAR(20)
+        START 12
+        TYPE C
+        INTERNALNAME HOSPNAME
+        INTERNAL TYPECONVERTER CHAR
+        CCSID 'Cp1047'
+    ) IN DATABASE DHDHOS1
+    INTERNALNAME HOSPITAL
+    MAXBYTES 31
+    INSERT LOGICAL DELETE LOGICAL REPLACE LOGICAL
+    AMBIGUOUS INSERT LAST
+    CCSID 'Cp1047'
+         → OK
+[4/5] CREATE TABLE WARD (
+    WARDNO CHAR(4)
+        START 1
+        TYPE C
+        INTERNALNAME WARDNO
+        PRIMARY KEY
+        INTERNAL TYPECONVERTER CHAR
+        CCSID 'Cp1047',
+    WARDNAME CHAR(16)
+        START 5
+        TYPE C
+        INTERNALNAME WARDNAME
+        INTERNAL TYPECONVERTER CHAR
+        CCSID 'Cp1047',
+    HOSPCODE CHAR(11)
+        START 21
+        TYPE C
+        INTERNALNAME HOSPCODE
+        INTERNAL TYPECONVERTER CHAR
+        CCSID 'Cp1047',
+    FOREIGN KEY (HOSPCODE) REFERENCES HOSPITAL
+    ) IN DATABASE DHDHOS1
+    INTERNALNAME WARD
+    MAXBYTES 31
+    INSERT LOGICAL DELETE LOGICAL REPLACE LOGICAL
+    AMBIGUOUS INSERT LAST
+    CCSID 'Cp1047'
+         → OK
+[5/5] CREATE TABLE PATIENT (
+    PATNO CHAR(4)
+        START 1
+        TYPE C
+        INTERNALNAME PATNO
+        PRIMARY KEY
+        INTERNAL TYPECONVERTER CHAR
+        CCSID 'Cp1047',
+    PATNAME CHAR(20)
+        START 5
+        TYPE C
+        INTERNALNAME PATNAME
+        INTERNAL TYPECONVERTER CHAR
+        CCSID 'Cp1047',
+    WARDNO CHAR(4)
+        START 25
+        TYPE C
+        INTERNALNAME WARDNO
+        INTERNAL TYPECONVERTER CHAR
+        CCSID 'Cp1047',
+    FOREIGN KEY (WARDNO) REFERENCES WARD
+    ) IN DATABASE DHDHOS1
+    INTERNALNAME PATIENT
+    MAXBYTES 28
+    INSERT LOGICAL DELETE LOGICAL REPLACE LOGICAL
+    AMBIGUOUS INSERT LAST
+    CCSID 'Cp1047'
+         → OK
+
+COMMIT DDL: ISSUED
+✓ COMMIT DDL issued. Database 'DHDHOS1' is now registered in the IMS catalog.
+DDL archived to: /Users/andrewpurso/Documents/bob-jdbc-demo/bob-demo/bob-demo/../ddl-output/DHDHOS1_create_20260717_144619.sql
+
+Result: SUCCESS

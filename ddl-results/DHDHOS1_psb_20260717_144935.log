@@ -1,0 +1,18 @@
+================================================================================
+IMS DBA Executor — Execution Log
+================================================================================
+Operation:  CREATE (PSB)
+Name:       DHDHOS1
+DDL file:   ../../psb-output/DHDHOS1_psb_20260717_144700.sql
+Timestamp:  20260717_144935
+User:       IBMUSER
+Host:       172.19.3.3:5555
+================================================================================
+
+Validation: PASSED
+  CREATE PROGRAMVIEW: 1
+  COMMIT:             1
+
+Connecting to 172.19.3.3:5555 PSB=DFSCP001
+Connected successfully.
+[1/2] 

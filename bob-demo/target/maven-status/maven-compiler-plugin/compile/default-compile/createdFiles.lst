@@ -1,0 +1,4 @@
+com/ibm/ims/jdbcbob/IMSCatalogDDLExporter.class
+com/ibm/ims/jdbcbob/IMSDDLFileExecutor.class
+com/ibm/ims/jdbcbob/IMSCatalogImporter.class
+com/ibm/ims/jdbcbob/IMSCatalogDDLExporter$ColumnInfo.class

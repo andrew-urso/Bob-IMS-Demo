@@ -1,0 +1,77 @@
+================================================================================
+IMS DBA Executor — Execution Log
+================================================================================
+Operation:  ALTER
+Name:       STOKSTAT
+DDL file:   ../ddl-output/DI21PART_editor_20260720_104607.sql
+Timestamp:  20260720_105021
+User:       IBMUSER
+Host:       172.19.3.3:5555
+================================================================================
+
+Validation: PASSED
+  ALTER TABLE: 1
+
+Connecting to 172.19.3.3:5555 PSB=DFSCP001
+Connected successfully.
+[1/1] ALTER TABLE STOKSTAT IN DATABASE DI21PART
+  ADD COLUMN SSUNPRC CHAR(9)
+    START 11
+    TYPE C
+    INTERNALNAME SSUNPRC
+    INTERNAL TYPECONVERTER CHAR
+    CCSID 'Cp1047',
+  ADD COLUMN SSUOMEA CHAR(4)
+    START 20
+    TYPE C
+    INTERNALNAME SSUOMEA
+    INTERNAL TYPECONVERTER CHAR
+    CCSID 'Cp1047',
+  ADD COLUMN SSSTKDT CHAR(3)
+    START 24
+    TYPE C
+    INTERNALNAME SSSTKDT
+    INTERNAL TYPECONVERTER CHAR
+    CCSID 'Cp1047',
+  ADD COLUMN SSCREQM CHAR(8)
+    START 27
+    TYPE C
+    INTERNALNAME SSCREQM
+    INTERNAL TYPECONVERTER CHAR
+    CCSID 'Cp1047',
+  ADD COLUMN SSUREQM CHAR(8)
+    START 35
+    TYPE C
+    INTERNALNAME SSUREQM
+    INTERNAL TYPECONVERTER CHAR
+    CCSID 'Cp1047',
+  ADD COLUMN SSONORD CHAR(8)
+    START 43
+    TYPE C
+    INTERNALNAME SSONORD
+    INTERNAL TYPECONVERTER CHAR
+    CCSID 'Cp1047',
+  ADD COLUMN SSINSTK CHAR(8)
+    START 51
+    TYPE C
+    INTERNALNAME SSINSTK
+    INTERNAL TYPECONVERTER CHAR
+    CCSID 'Cp1047',
+  ADD COLUMN SSPLDIS CHAR(8)
+    START 59
+    TYPE C
+    INTERNALNAME SSPLDIS
+    INTERNAL TYPECONVERTER CHAR
+    CCSID 'Cp1047',
+  ADD COLUMN SSULDIS CHAR(8)
+    START 67
+    TYPE C
+    INTERNALNAME SSULDIS
+    INTERNAL TYPECONVERTER CHAR
+    CCSID 'Cp1047'
+         → OK
+
+COMMIT DDL: ISSUED
+✓ COMMIT DDL issued. Alterations to 'STOKSTAT' are now registered in the IMS catalog.
+
+Result: SUCCESS

@@ -1,0 +1,41 @@
+IMS Catalog DDL Export — 2026-08-24 11:59:51
+Host: 172.19.3.3:5555
+========================================================================
+  OK  DFSSAMT4
+  ERR DFSSAM01: An error occurred accessing the PSB: Unable to retrieve metadata information for Database (PSB), DFSSAM01, from the IMS Catalog. Error allocating the PSB DFSSAM01. AIB return code: 0x108. AIB reason code: 0x324. AIB error code extension: 0xc4c6e2e2. Diagnostic info: CSL4101E An ODBM DL/I call=APSB failed.  AIBRETRN=00000108 AIBREASN=00000324 AIBERRXT=C4C6E2E2.
+  OK  DFSSAM02
+  OK  DFSSAM03
+  OK  DFSSAM04
+  OK  DFSSAM05
+  OK  DFSSAM06
+  OK  DFSSAM07
+  ERR DFSSAM08: An error occurred accessing the PSB: Unable to retrieve metadata information for Database (PSB), DFSSAM08, from the IMS Catalog. The PSB DFSSAM08 contains a PCB that has no name or label defined.
+  OK  DFSSAM09
+  OK  DHHOSPSB
+  OK  IPOPSB
+  ERR IPOPSBL: An error occurred accessing the PSB: Unable to retrieve metadata information for Database (PSB), IPOPSBL, from the IMS Catalog. Error allocating the PSB IPOPSBL . AIB return code: 0x108. AIB reason code: 0x304. AIB error code extension: 0x8. Diagnostic info: CSL4101E An ODBM DL/I call=APSB failed.  AIBRETRN=00000108 AIBREASN=00000304 AIBERRXT=00000008.
+  OK  JBPLAB
+  ERR JBPPARTS: An error occurred accessing the PSB: Unable to retrieve metadata information for Database (PSB), JBPPARTS, from the IMS Catalog. Error allocating the PSB JBPPARTS. AIB return code: 0x108. AIB reason code: 0x304. AIB error code extension: 0x8. Diagnostic info: CSL4101E An ODBM DL/I call=APSB failed.  AIBRETRN=00000108 AIBREASN=00000304 AIBERRXT=00000008.
+  OK  JMPPARTS
+  OK  URSOPRTS
+  DBD DFSSAMT4
+  DBD DFSSAM02
+  DBD DFSSAM03
+  DBD DFSSAM04
+  DBD DFSSAM05
+  DBD DFSSAM06
+  DBD DFSSAM07
+  DBD DFSSAM09
+  DBD DHHOSPSB
+  DBD IPOPSB
+  DBD JBPLAB
+  DBD JMPPARTS
+  DBD URSOPRTS
+
+[SUMMARY]
+PSB: 13 exported, 4 failed
+DBD: 13 unique databases written
+
+[ERRORS]
+DFSSAM01: An error occurred accessing the PSB: Unable to retrieve metadata information for Database (PSB), DFSSAM01, from the IMS Catalog. Error allocating the PSB DFSSAM01. AIB return code: 0x108. AIB reason code: 0x324. AIB error code extension: 0xc4c6e2e2. Diagnostic info: CSL4101E An ODBM DL/I call=APSB failed.  AIBRETRN=00000108 AIBREASN=00000324 AIBERRXT=C4C6E2E2.
+DFSSAM08: An error occurred accessing the PSB: Unable to retrieve metadata information for Database (PSB), DFSSAM0

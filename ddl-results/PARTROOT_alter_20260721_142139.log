@@ -1,0 +1,15 @@
+================================================================================
+IMS DBA Executor — Execution Log
+================================================================================
+Operation:  ALTER
+Name:       PARTROOT
+DDL file:   ../ddl-output/DI21PART_drop_nonkey_cols.sql
+Timestamp:  20260721_142139
+User:       IBMUSER
+Host:       172.19.3.3:5555
+================================================================================
+
+Validation: PASSED
+  ALTER TABLE: 2
+
+Connecting to 172.19.3.3:

@@ -1,0 +1,35 @@
+================================================================================
+IMS DBA Executor — Execution Log
+================================================================================
+Operation:  CREATE (PSB)
+Name:       DHHOSPSB
+DDL file:   ../../psb-output/DHHOSPSB_psb_20260717_144700.sql
+Timestamp:  20260717_144951
+User:       IBMUSER
+Host:       172.19.3.3:5555
+================================================================================
+
+Validation: PASSED
+  CREATE PROGRAMVIEW: 1
+  COMMIT:             1
+
+Connecting to 172.19.3.3:5555 PSB=DFSCP001
+Connected successfully.
+[1/2] CREATE PROGRAMVIEW DHHOSPSB (
+    CREATE SCHEMA PCB01 USING DHDHOS1
+        AS PCB01 (
+            CREATE SENSEGVIEW HOSPITAL,
+            CREATE SENSEGVIEW WARD,
+            CREATE SENSEGVIEW PATIENT)
+        PROCOPT 'AP' LISTYES
+        POSSNGL SBCOND
+) CMPATYES GSROLBOKNO OLICYES LOCKMAX 0 IOASIZE 600 SSASIZE 840
+    LANGASSEM
+         → OK
+[2/2] COMMIT DDL
+         → OK
+
+✓ PSB 'DHHOSPSB' is now registered in the IMS catalog.
+PSB DDL archived to: /Users/andrewpurso/Documents/bob-jdbc-demo/bob-demo/bob-demo/../psb-output/DHHOSPSB_psb_20260717_144951.sql
+
+Result: SUCCESS

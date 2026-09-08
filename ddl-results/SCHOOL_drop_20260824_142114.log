@@ -1,0 +1,15 @@
+================================================================================
+IMS DBA Executor — Execution Log
+================================================================================
+Operation:  DROP
+Name:       SCHOOL
+DDL file:   ../../ddl-output/SCHOOL_drop.sql
+Timestamp:  20260824_142114
+User:       IBMUSER
+Host:       172.19.3.3:5555
+================================================================================
+
+Validation: PASSED
+  DROP statements: 3
+
+Connecting to 172.19.3.3:5555 PSB=D

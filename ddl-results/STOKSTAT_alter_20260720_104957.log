@@ -1,0 +1,25 @@
+================================================================================
+IMS DBA Executor — Execution Log
+================================================================================
+Operation:  ALTER
+Name:       STOKSTAT
+DDL file:   ../ddl-output/DI21PART_probe.sql
+Timestamp:  20260720_104957
+User:       IBMUSER
+Host:       172.19.3.3:5555
+================================================================================
+
+Validation: PASSED
+  ALTER TABLE: 1
+
+Connecting to 172.19.3.3:5555 PSB=DFSCP001
+Connected successfully.
+[1/2] ALTER TABLE STOKSTAT IN DATABASE DI21PART
+  ADD COLUMN SSUNPRC CHAR(9)
+    START 11
+    TYPE C
+    INTERNALNAME SSUNPRC
+    INTERNAL TYPECONVERTER CHAR
+    CCSID 'Cp1047'
+         → OK
+[2/2] COMMIT

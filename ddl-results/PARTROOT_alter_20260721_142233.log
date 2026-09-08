@@ -1,0 +1,72 @@
+================================================================================
+IMS DBA Executor — Execution Log
+================================================================================
+Operation:  ALTER
+Name:       PARTROOT
+DDL file:   ../ddl-output/DI21PART_drop_nonkey_cols.sql
+Timestamp:  20260721_142233
+User:       IBMUSER
+Host:       172.19.3.3:5555
+================================================================================
+
+Validation: PASSED
+  ALTER TABLE: 11
+
+Connecting to 172.19.3.3:5555 PSB=DFSCP001
+Connected successfully.
+[1/22] ALTER TABLE PARTROOT IN DATABASE DI21PART
+    DROP COLUMN PARTNAME RESTRICT
+         → OK
+[2/22] COMMIT DDL
+         → OK
+[3/22] ALTER TABLE PARTROOT IN DATABASE DI21PART
+    DROP COLUMN PARTDESC RESTRICT
+         → OK
+[4/22] COMMIT DDL
+         → OK
+[5/22] ALTER TABLE STOKSTAT IN DATABASE DI21PART
+    DROP COLUMN SSUNPRC RESTRICT
+         → OK
+[6/22] COMMIT DDL
+         → OK
+[7/22] ALTER TABLE STOKSTAT IN DATABASE DI21PART
+    DROP COLUMN SSUOMEA RESTRICT
+         → OK
+[8/22] COMMIT DDL
+         → OK
+[9/22] ALTER TABLE STOKSTAT IN DATABASE DI21PART
+    DROP COLUMN SSSTKDT RESTRICT
+         → OK
+[10/22] COMMIT DDL
+         → OK
+[11/22] ALTER TABLE STOKSTAT IN DATABASE DI21PART
+    DROP COLUMN SSCREQM RESTRICT
+         → OK
+[12/22] COMMIT DDL
+         → OK
+[13/22] ALTER TABLE STOKSTAT IN DATABASE DI21PART
+    DROP COLUMN SSUREQM RESTRICT
+         → OK
+[14/22] COMMIT DDL
+         → OK
+[15/22] ALTER TABLE STOKSTAT IN DATABASE DI21PART
+    DROP COLUMN SSONORD RESTRICT
+         → OK
+[16/22] COMMIT DDL
+         → OK
+[17/22] ALTER TABLE STOKSTAT IN DATABASE DI21PART
+    DROP COLUMN SSINSTK RESTRICT
+         → OK
+[18/22] COMMIT DDL
+         → OK
+[19/22] ALTER TABLE STOKSTAT IN DATABASE DI21PART
+    DROP COLUMN SSPLDIS RESTRICT
+         → OK
+[20/22] COMMIT DDL
+         → OK
+[21/22] ALTER TABLE STOKSTAT IN DATABASE DI21PART
+    DROP COLUMN SSULDIS RESTRICT
+         → OK
+[22/22] COMMIT DDL
+         → OK
+Unexpected error: -104: Il

@@ -1,0 +1,17 @@
+================================================================================
+IMS DBA Executor — Execution Log
+================================================================================
+Operation:  ALTER
+Name:       STOKSTAT
+DDL file:   ../ddl-output/DI21PART_editor_20260720_104607.sql
+Timestamp:  20260720_105456
+User:       IBMUSER
+Host:       172.19.3.3:5555
+================================================================================
+
+Validation: PASSED
+  ALTER TABLE: 1
+
+Connecting to 172.19.3.3:5555 PSB=DFSCP001
+Connected successfully.
+[1/1] 
