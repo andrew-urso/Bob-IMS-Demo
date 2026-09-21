@@ -1,0 +1,15 @@
+-- !! WARNING: DROP COLUMN is irreversible. All data in the dropped columns will be lost. !!
+-- EDITOR (NLP): Remove all non-key fields from PARTROOT in DFSSAM09 (DBD: DI21PART)
+-- Non-key columns dropped: PARTNAME, PARTDESC
+-- Key column retained:     PARTKEY (PRIMARY KEY)
+-- Generated: 2026-09-21 08:41:58
+
+ALTER TABLE PARTROOT IN DATABASE DI21PART
+    DROP COLUMN PARTNAME RESTRICT;
+
+COMMIT DDL;
+
+ALTER TABLE PARTROOT IN DATABASE DI21PART
+    DROP COLUMN PARTDESC RESTRICT;
+
+COMMIT DDL;

@@ -1,0 +1,59 @@
+================================================================================
+IMS DBA Executor — Execution Log
+================================================================================
+Operation:  CREATE (DBD)
+Name:       SCHOOLDB
+DDL file:   /Users/andrewpurso/Documents/bob-jdbc-demo/bob-demo/ddl-output/SCHOOLDB_create_20260921_114157.sql
+Timestamp:  20260921_114401
+User:       IBMUSER
+Host:       172.19.3.3:5555
+================================================================================
+
+Validation: PASSED (DEDB)
+  CREATE DATABASE:   1
+  CREATE TABLESPACE: 1
+  CREATE TABLE:      1
+
+Connecting to 172.19.3.3:5555 PSB=DFSCP001
+Connected successfully.
+[1/3] CREATE DATABASE SCHOOLDB ACCESS DEDB
+    RMNAME(DBFDBMA0)
+    VERSION '09/21/2026.11'
+    DATA CAPTURE NONE CCSID 'Cp1047'
+         → OK
+[2/3] CREATE TABLESPACE SCHOOLDB IN SCHOOLDB
+    SIZE PRIMARY 512
+    UOW(100,2)
+    ROOT(100,2)
+         → OK
+[3/3] CREATE TABLE SCHOOL (
+    SCID CHAR(5)
+        START 1
+        TYPE C
+        INTERNALNAME SCID
+        PRIMARY KEY
+        INTERNAL TYPECONVERTER CHAR
+        CCSID 'Cp1047',
+    SCNAME CHAR(15)
+        START 6
+        TYPE C
+        INTERNALNAME SCNAME
+        INTERNAL TYPECONVERTER CHAR
+        CCSID 'Cp1047',
+    SCCOUNTY CHAR(15)
+        START 21
+        TYPE C
+        INTERNALNAME SCCOUNTY
+        INTERNAL TYPECONVERTER CHAR
+        CCSID 'Cp1047'
+    ) IN DATABASE SCHOOLDB
+    INTERNALNAME SCHOOL
+    MAXBYTES 35
+    CCSID 'Cp1047'
+         → OK
+
+COMMIT DDL: ISSUED
+✓ COMMIT DDL issued. Database 'SCHOOLDB' is now registered in the IMS catalog.
+DDL archived to: /Users/andrewpurso/Documents/bob-jdbc-demo/bob-demo/bob-demo/../ddl-output/SCHOOLDB_create_20260921_114401.sql
+
+Result: SUCCESS

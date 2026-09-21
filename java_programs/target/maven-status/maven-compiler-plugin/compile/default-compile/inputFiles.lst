@@ -1,0 +1,12 @@
+/Users/andrewpurso/Documents/bob-jdbc-demo/bob-demo/bob-demo/src/main/java/com/ibm/ims/jdbcbob/IMSCatalogDDLExporter.java
+/Users/andrewpurso/Documents/bob-jdbc-demo/bob-demo/bob-demo/src/main/java/com/ibm/ims/jdbcbob/IMSCatalogImporter.java
+/Users/andrewpurso/Documents/bob-jdbc-demo/bob-demo/bob-demo/src/main/java/com/ibm/ims/jdbcbob/IMSConnectionConfig.java
+/Users/andrewpurso/Documents/bob-jdbc-demo/bob-demo/bob-demo/src/main/java/com/ibm/ims/jdbcbob/IMSDBAExecutor.java
+/Users/andrewpurso/Documents/bob-jdbc-demo/bob-demo/bob-demo/src/main/java/com/ibm/ims/jdbcbob/IMSDDL.java
+/Users/andrewpurso/Documents/bob-jdbc-demo/bob-demo/bob-demo/src/main/java/com/ibm/ims/jdbcbob/IMSDDLFileExecutor.java
+/Users/andrewpurso/Documents/bob-jdbc-demo/bob-demo/bob-demo/src/main/java/com/ibm/ims/jdbcbob/IMSInsertExecutor.java
+/Users/andrewpurso/Documents/bob-jdbc-demo/bob-demo/bob-demo/src/main/java/com/ibm/ims/jdbcbob/IMSMetadataExplorer.java
+/Users/andrewpurso/Documents/bob-jdbc-demo/bob-demo/bob-demo/src/main/java/com/ibm/ims/jdbcbob/IMSQueryExecutor.java
+/Users/andrewpurso/Documents/bob-jdbc-demo/bob-demo/bob-demo/src/main/java/com/ibm/ims/jdbcbob/ListPCBs.java
+/Users/andrewpurso/Documents/bob-jdbc-demo/bob-demo/bob-demo/src/main/java/com/ibm/ims/jdbcbob/MyIMSApplicationSolutions.java
+/Users/andrewpurso/Documents/bob-jdbc-demo/bob-demo/bob-demo/src/main/java/com/ibm/ims/jdbcbob/QueryPartRoot.java

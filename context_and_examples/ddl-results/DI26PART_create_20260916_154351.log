@@ -1,0 +1,67 @@
+================================================================================
+IMS DBA Executor — Execution Log
+================================================================================
+Operation:  CREATE (DBD)
+Name:       DI26PART
+DDL file:   ../../ddl-output/DI26PART_create_20260916_130000.sql
+Timestamp:  20260916_154351
+User:       IBMUSER
+Host:       172.19.3.3:5555
+================================================================================
+
+Validation: PASSED (DEDB)
+  CREATE DATABASE:   1
+  CREATE TABLESPACE: 1
+  CREATE TABLE:      2
+
+Connecting to 172.19.3.3:5555 PSB=DFSCP001
+Connected successfully.
+[1/4] CREATE DATABASE DI26PART ACCESS DEDB
+    RMNAME(DBFDBMA0)
+    VERSION '09/16/2026.13'
+    DATA CAPTURE NONE CCSID 'Cp1047'
+         → OK
+[2/4] CREATE TABLESPACE DI26PART IN DI26PART
+    SIZE PRIMARY 512
+    UOW(100,2)
+    ROOT(100,2)
+         → OK
+[3/4] CREATE TABLE PARTROOT (
+    PARTKEY CHAR(17)
+        START 1
+        TYPE C
+        INTERNALNAME PARTKEY
+        PRIMARY KEY
+        INTERNAL TYPECONVERTER CHAR
+        CCSID 'Cp1047'
+    ) IN DATABASE DI26PART
+    INTERNALNAME PARTROOT
+    MAXBYTES 17
+    CCSID 'Cp1047'
+         → OK
+[4/4] CREATE TABLE STOKSTAT (
+    STOCKEY CHAR(17)
+        START 1
+        TYPE C
+        INTERNALNAME STOCKEY
+        PRIMARY KEY
+        INTERNAL TYPECONVERTER CHAR
+        CCSID 'Cp1047',
+    PARTKEY CHAR(17)
+        START 18
+        TYPE C
+        INTERNALNAME PARTKEY
+        INTERNAL TYPECONVERTER CHAR
+        CCSID 'Cp1047',
+    FOREIGN KEY REFERENCES PARTROOT
+    ) IN DATABASE DI26PART
+    INTERNALNAME STOKSTAT
+    MAXBYTES 34
+    CCSID 'Cp1047'
+         → OK
+
+COMMIT DDL: ISSUED
+✓ COMMIT DDL issued. Database 'DI26PART' is now registered in the IMS catalog.
+DDL archived to: /Users/andrewpurso/Documents/bob-jdbc-demo/bob-demo/bob-demo/../ddl-output/DI26PART_create_20260916_154351.sql
+
+Result: SUCCESS

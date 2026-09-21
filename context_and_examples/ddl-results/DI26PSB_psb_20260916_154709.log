@@ -1,0 +1,34 @@
+================================================================================
+IMS DBA Executor — Execution Log
+================================================================================
+Operation:  CREATE (PSB)
+Name:       DI26PSB
+DDL file:   ../../psb-output/DI26PSB_psb_20260916_154500.sql
+Timestamp:  20260916_154709
+User:       IBMUSER
+Host:       172.19.3.3:5555
+================================================================================
+
+Validation: PASSED
+  CREATE PROGRAMVIEW: 1
+  COMMIT DDL:         1
+
+Connecting to 172.19.3.3:5555 PSB=DFSCP001
+Connected successfully.
+[1/2] CREATE PROGRAMVIEW DI26PSB (
+    CREATE SCHEMA PCB01 USING DI26PART
+        AS PCB01 (
+            CREATE SENSEGVIEW PARTROOT,
+            CREATE SENSEGVIEW STOKSTAT)
+        PROCOPT 'AP' LISTYES
+        POSSNGL SBCOND
+) CMPATYES GSROLBOKNO OLICYES LOCKMAX 0 IOASIZE 600 SSASIZE 840
+    LANGASSEM
+         → OK
+[2/2] COMMIT DDL
+         → OK
+
+✓ PSB 'DI26PSB' is now registered in the IMS catalog.
+PSB DDL archived to: /Users/andrewpurso/Documents/bob-jdbc-demo/bob-demo/bob-demo/../psb-output/DI26PSB_psb_20260916_154709.sql
+
+Result: SUCCESS

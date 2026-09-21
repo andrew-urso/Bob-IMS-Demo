@@ -1,0 +1,59 @@
+================================================================================
+IMS DBA Executor — Execution Log
+================================================================================
+Operation:  CREATE (DBD)
+Name:       HOTELDB
+DDL file:   ../ddl-output/HOTELDB_create_20260921_092842.sql
+Timestamp:  20260921_092922
+User:       IBMUSER
+Host:       172.19.3.3:5555
+================================================================================
+
+Validation: PASSED (DEDB)
+  CREATE DATABASE:   1
+  CREATE TABLESPACE: 1
+  CREATE TABLE:      1
+
+Connecting to 172.19.3.3:5555 PSB=DFSCP001
+Connected successfully.
+[1/3] CREATE DATABASE HOTELDB ACCESS DEDB
+    RMNAME(DBFDBMA0)
+    VERSION '09/21/2026.12'
+    DATA CAPTURE NONE CCSID 'Cp1047'
+         → OK
+[2/3] CREATE TABLESPACE HOTELDB IN HOTELDB
+    SIZE PRIMARY 512
+    UOW(100,2)
+    ROOT(100,2)
+         → OK
+[3/3] CREATE TABLE HOTELSEG (
+    ROOMNUM CHAR(5)
+        START 1
+        TYPE C
+        INTERNALNAME ROOMNUM
+        PRIMARY KEY
+        INTERNAL TYPECONVERTER CHAR
+        CCSID 'Cp1047',
+    FSTNAME CHAR(12)
+        START 6
+        TYPE C
+        INTERNALNAME FSTNAME
+        INTERNAL TYPECONVERTER CHAR
+        CCSID 'Cp1047',
+    LSTNAME CHAR(12)
+        START 18
+        TYPE C
+        INTERNALNAME LSTNAME
+        INTERNAL TYPECONVERTER CHAR
+        CCSID 'Cp1047'
+    ) IN DATABASE HOTELDB
+    INTERNALNAME HOTELSEG
+    MAXBYTES 29
+    CCSID 'Cp1047'
+         → OK
+
+COMMIT DDL: ISSUED
+✓ COMMIT DDL issued. Database 'HOTELDB' is now registered in the IMS catalog.
+DDL archived to: /Users/andrewpurso/Documents/bob-jdbc-demo/bob-demo/bob-demo/../ddl-output/HOTELDB_create_20260921_092922.sql
+
+Result: SUCCESS

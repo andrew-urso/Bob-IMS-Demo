@@ -1,0 +1,12 @@
+================================================================================
+IMS DBA Executor — Execution Log
+================================================================================
+Operation:  DROP
+Name:       SCHOOLDB
+DDL file:   /Users/andrewpurso/Documents/bob-jdbc-demo/bob-demo/ddl-output/SCHOOLDB_drop_20260921.sql
+Timestamp:  20260921_114354
+User:       IBMUSER
+Host:       172.19.3.3:5555
+================================================================================
+
+Validation: PASSE

@@ -1,0 +1,72 @@
+================================================================================
+IMS DBA Executor — Execution Log
+================================================================================
+Operation:  CREATE (DBD)
+Name:       DI24PART
+DDL file:   ../../ddl-output/DI24PART_create_20260915_160000.sql
+Timestamp:  20260916_121415
+User:       IBMUSER
+Host:       172.19.3.3:5555
+================================================================================
+
+Validation: PASSED
+  CREATE DATABASE:   1
+  CREATE TABLESPACE: 1
+  CREATE TABLE:      2
+
+Connecting to 172.19.3.3:5555 PSB=DFSCP001
+Connected successfully.
+[1/4] CREATE DATABASE DI24PART ACCESS HISAM
+    VERSION '09/15/2026.16'
+    PASSWDNO
+    DATXEXITNO
+    DATA CAPTURE NONE CCSID 'Cp1047'
+         → OK
+[2/4] CREATE TABLESPACE DI24PART IN DI24PART
+    RECORD(17,17)
+    SIZE PRIMARY 2048 SIZE SECONDARY 2048
+    OVERFLOW(DI24PARO)
+         → OK
+[3/4] CREATE TABLE PARTROOT (
+    PARTKEY CHAR(17)
+        START 1
+        TYPE C
+        INTERNALNAME PARTKEY
+        PRIMARY KEY
+        INTERNAL TYPECONVERTER CHAR
+        CCSID 'Cp1047'
+    ) IN DATABASE DI24PART
+    INTERNALNAME PARTROOT
+    MAXBYTES 17
+    INSERT LOGICAL DELETE LOGICAL REPLACE LOGICAL
+    AMBIGUOUS INSERT LAST
+    CCSID 'Cp1047'
+         → OK
+[4/4] CREATE TABLE STOKSTAT (
+    STOCKEY CHAR(17)
+        START 1
+        TYPE C
+        INTERNALNAME STOCKEY
+        PRIMARY KEY
+        INTERNAL TYPECONVERTER CHAR
+        CCSID 'Cp1047',
+    PARTKEY CHAR(17)
+        START 18
+        TYPE C
+        INTERNALNAME PARTKEY
+        INTERNAL TYPECONVERTER CHAR
+        CCSID 'Cp1047',
+    FOREIGN KEY (PARTKEY) REFERENCES PARTROOT
+    ) IN DATABASE DI24PART
+    INTERNALNAME STOKSTAT
+    MAXBYTES 34
+    INSERT LOGICAL DELETE LOGICAL REPLACE LOGICAL
+    AMBIGUOUS INSERT LAST
+    CCSID 'Cp1047'
+         → OK
+
+COMMIT DDL: ISSUED
+✓ COMMIT DDL issued. Database 'DI24PART' is now registered in the IMS catalog.
+DDL archived to: /Users/andrewpurso/Documents/bob-jdbc-demo/bob-demo/bob-demo/../ddl-output/DI24PART_create_20260916_121415.sql
+
+Result: SUCCESS

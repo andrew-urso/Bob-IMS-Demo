@@ -1,0 +1,8 @@
+-- !! WARNING: DROP COLUMN is irreversible. Data in PARTINFO will be lost. !!
+-- ALTER: Drop column PARTINFO from PARTROOT in database DI21PART
+-- Generated: 2026-09-21
+
+ALTER TABLE PARTROOT IN DATABASE DI21PART
+    DROP COLUMN PARTINFO RESTRICT;
+
+COMMIT DDL;

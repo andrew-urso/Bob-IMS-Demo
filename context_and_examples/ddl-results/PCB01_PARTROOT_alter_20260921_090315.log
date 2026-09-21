@@ -1,0 +1,15 @@
+================================================================================
+IMS DBA Executor — Execution Log
+================================================================================
+Operation:  ALTER
+Name:       PCB01.PARTROOT
+DDL file:   ../ddl-output/DI21PART_alter_20260921_090302.sql
+Timestamp:  20260921_090315
+User:       IBMUSER
+Host:       172.19.3.3:5555
+================================================================================
+
+Validation: PASSED
+  ALTER TABLE: 1
+
+Connecting to 

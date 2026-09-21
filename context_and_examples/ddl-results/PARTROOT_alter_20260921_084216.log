@@ -1,0 +1,30 @@
+================================================================================
+IMS DBA Executor — Execution Log
+================================================================================
+Operation:  ALTER
+Name:       PARTROOT
+DDL file:   ../ddl-output/DFSSAM09_editor_20260921_084158.sql
+Timestamp:  20260921_084216
+User:       IBMUSER
+Host:       172.19.3.3:5555
+================================================================================
+
+Validation: PASSED
+  ALTER TABLE: 2
+
+Connecting to 172.19.3.3:5555 PSB=DFSCP001
+Connected successfully.
+[1/4] ALTER TABLE PARTROOT IN DATABASE DI21PART
+    DROP COLUMN PARTNAME RESTRICT
+         → OK
+[2/4] COMMIT DDL
+         → OK
+[3/4] ALTER TABLE PARTROOT IN DATABASE DI21PART
+    DROP COLUMN PARTDESC RESTRICT
+         → OK
+[4/4] COMMIT DDL
+         → OK
+
+✓ All statements executed successfully. Alterations to 'PARTROOT' are registered in the IMS catalog.
+
+Result: SUCCESS

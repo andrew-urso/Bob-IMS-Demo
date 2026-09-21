@@ -1,0 +1,12 @@
+================================================================================
+IMS DBA Executor — Execution Log
+================================================================================
+Operation:  DROP
+Name:       UNKNOWN
+DDL file:   ../ddl-output/DI24PART_create_20260908_155047.sql
+Timestamp:  20260915_160251
+User:       IBMUSER
+Host:       172.19.3.3:5555
+================================================================================
+
+✗ DROP validation failed — no DROP DATABASE statement 

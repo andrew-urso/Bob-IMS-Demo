@@ -1,0 +1,30 @@
+================================================================================
+IMS DBA Executor — Execution Log
+================================================================================
+Operation:  ALTER
+Name:       PARTROOT
+DDL file:   ../ddl-output/DFSSAM09_editor_20260921_084358.sql
+Timestamp:  20260921_084422
+User:       IBMUSER
+Host:       172.19.3.3:5555
+================================================================================
+
+Validation: PASSED
+  ALTER TABLE: 1
+
+Connecting to 172.19.3.3:5555 PSB=DFSCP001
+Connected successfully.
+[1/2] ALTER TABLE PARTROOT IN DATABASE DI21PART
+    ADD COLUMN PARTINFO CHAR(18)
+        START 18
+        TYPE C
+        INTERNALNAME PARTINFO
+        INTERNAL TYPECONVERTER CHAR
+        CCSID 'Cp1047'
+         → OK
+[2/2] COMMIT DDL
+         → OK
+
+✓ All statements executed successfully. Alterations to 'PARTROOT' are registered in the IMS catalog.
+
+Result: SUCCESS
